@@ -1,7 +1,7 @@
 program Uniao;
 	
 	type tipo_vetor = array [0..400] of integer;
-	var cont_uniao, parar, i: integer;
+	var cont_uniao, i: integer;
 		vetor_uniao: tipo_vetor;
 		
 
@@ -56,7 +56,5 @@ begin
 	write('Conjunto Uniao =');
 	for i:= 0 to (cont_uniao - 1) do
 	write(' ',vetor_uniao[i]);
-
-	read(parar);
 
 end.

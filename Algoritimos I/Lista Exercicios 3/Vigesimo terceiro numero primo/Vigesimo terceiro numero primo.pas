@@ -1,5 +1,5 @@
 program primos;
- var para : integer;
+
 function encontra_primo( limite: integer): integer;
 
 var atual, contagem, aux: integer;
@@ -35,5 +35,4 @@ end;
 begin
 
 writeln(encontra_primo(23));
-read(para);
 end.

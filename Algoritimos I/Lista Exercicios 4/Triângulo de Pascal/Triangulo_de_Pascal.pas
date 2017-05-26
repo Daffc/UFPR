@@ -1,14 +1,14 @@
 program Triangulo_de_Pascal;
 	
 	type tipo_vetor = array [-1..400] of longint;
-	var valor_repete, i, parar : integer;
+	var valor_repete, i : integer;
 		vetor_reserva: tipo_vetor;
 		
 
 procedure constroi_piramide(comprimento : integer);
 
 var vetor_aux: tipo_vetor;
-	cont : integer;
+	cont : longint;
 
 begin
 	
@@ -38,5 +38,4 @@ begin
 	begin
 		constroi_piramide(i);
 	end;
-	read(parar);
 end.

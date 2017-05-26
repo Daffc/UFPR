@@ -1,7 +1,7 @@
 program Numeros_repetidos;
 	
 	type tipo_vetor = array [0..400] of integer;
-	var cont_recebido, cont_repetidos, parar, i, transportador: integer;
+	var cont_recebido, cont_repetidos, i, transportador: integer;
 		vetor_recebido, vetor_repetidos: tipo_vetor;
 		
 
@@ -54,7 +54,5 @@ begin
 	write('Os repetidos sao:');
 	for i:= 0 to (cont_repetidos - 1) do
 	write(' ',vetor_repetidos[i]);
-
-	read(parar);
 
 end.

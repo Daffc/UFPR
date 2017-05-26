@@ -1,8 +1,8 @@
 program Intercala;
 	
-	type tipo_vetor = array [0..200] of real;
-	var  parar, i, a, b, c: integer;
-		vetor_a, vetor_b, vetor_c: tipo_vetor;
+	type 	tipo_vetor = array [0..200] of real;
+	var 	i, a, b, c: integer;
+			vetor_a, vetor_b, vetor_c: tipo_vetor;
 		
 
 procedure preenche(var vet : tipo_vetor;var tam : integer);
@@ -59,6 +59,4 @@ begin
 	
 	for i := 0 to c do
 		write((vetor_c[i]):2:1, ' ');
-		
-	read(parar);
 end.

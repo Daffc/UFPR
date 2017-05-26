@@ -1,6 +1,6 @@
 program Co_seno_de_1_radiano;
 
-var a, b, c, i, aux : longint;
+var a, b,  i, aux : longint;
 
 var soma, final : real;
 
@@ -51,9 +51,7 @@ begin
 		writeln('i = ',i);
 		writeln('a = ',1/a);
 		writeln('b = ',1/b);
-		read(c);
 	end;
 	
 	writeln(soma);
-	read(c);
 end.

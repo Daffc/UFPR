@@ -1,6 +1,6 @@
 program Fatores_primos;
 
-var a, con: integer;
+var a, con: longint;
 
 begin
 	read (a);
@@ -15,5 +15,4 @@ begin
 		write( con, ' ');
 		a:= a div con;
 	end;
-	read(a);
 end.

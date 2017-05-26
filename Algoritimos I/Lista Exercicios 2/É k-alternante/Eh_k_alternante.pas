@@ -1,6 +1,6 @@
 program Eh_k_alternante;
 
-var k, a,c, variante, aux: longint;
+var k, a, variante, aux: longint;
 
 begin
 	
@@ -23,13 +23,10 @@ begin
 	end;
 	
 	
-	if((a = 0) and (variante = k)) then
-	begin
-		writeln('Sim eh k-alternante');
-	end
+	if(a = 0) and (variante = k) then
+
+		writeln('Sim eh k-alternante')
+
 	else
-	begin
 		writeln('Nao eh k-alternante');
-	end;	
-	read(a);
 end.

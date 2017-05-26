@@ -1,6 +1,6 @@
 program MDC;
 
-var para, valor_1,  valor_2, total, casa: longint;
+var valor_1,  valor_2, total, casa: longint;
     aux_1: real;
  
 function multiplica( valor, multiplo, decimal: longint):longint;
@@ -48,5 +48,4 @@ begin
         casa := casa * 10;
     end ;
     writeln(total);
-    read(para);
 end.

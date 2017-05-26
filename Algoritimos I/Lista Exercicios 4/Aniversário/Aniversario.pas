@@ -3,7 +3,7 @@ program Aniversario;
 	const tamanho = 26;
 	
 	type tipo_vetor = array [0..50] of integer;
-	var  parar, i, cont_true: longint;
+	var  i, cont_true: longint;
 		vetor_final: tipo_vetor;
 		
 
@@ -55,5 +55,4 @@ begin
 	end;
 	
 	write ((trunc((cont_true / 100000)* 100)/100):3:2);	
-	read(parar);
 end.

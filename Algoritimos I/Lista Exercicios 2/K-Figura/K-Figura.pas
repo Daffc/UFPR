@@ -27,5 +27,4 @@ begin
 		
 		con:= con + 1;
 	end;
-	read(a);
 end.

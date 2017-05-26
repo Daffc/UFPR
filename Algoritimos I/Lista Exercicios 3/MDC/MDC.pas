@@ -1,6 +1,6 @@
 program MDC;
 
- var para, valor, auxiliar, max_dc, cont : integer;
+ var valor, auxiliar, max_dc, cont : longint;
 
 begin
 
@@ -34,5 +34,4 @@ begin
 	read(valor); 
 end;
 writeln (max_dc);
-read(para);
 end.

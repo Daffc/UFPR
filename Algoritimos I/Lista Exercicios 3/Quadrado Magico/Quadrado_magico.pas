@@ -1,6 +1,6 @@
 program Quadrado_magico;
 
-var para, valor,v_11,v_12,v_13,v_21,v_22,v_23,v_31,v_32,v_33, divisor, aux: longint;
+var valor,v_11,v_12,v_13,v_21,v_22,v_23,v_31,v_32,v_33, divisor, aux: longint;
 	definitivo: boolean;
 
 
@@ -90,6 +90,4 @@ writeln (v_11,' ',v_12,' ',v_13);
 writeln (v_21,' ',v_22,' ',v_23);
 writeln (v_31,' ',v_32,' ',v_33);
 
-
-read(para);
 end.
