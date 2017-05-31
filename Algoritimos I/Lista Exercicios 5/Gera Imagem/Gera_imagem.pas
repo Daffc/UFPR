@@ -7,7 +7,7 @@ const
 
 type
 	comprimento = 0 .. max;
-	tipo_matriz = array [0..m,0..n] of real;
+	tipo_matriz = array [0..m,0..n] of longint;
 
 var
 	matriz : tipo_matriz;
@@ -48,14 +48,15 @@ begin
 	}
 
 	//GERAR MATRIZ DE FORMA CICLICA
-
+	
 	for i := 3 to  m do
 	begin
 		for j := 0 to n do
 		begin
-			matriz[i,j] := sin(i mod 360);
+			matriz[i,j] := trunc(sin(i mod 360) * 1000);
 			write(matriz[i,j],' ');
 		end;
 		writeln();
 	end;
+
 end.
