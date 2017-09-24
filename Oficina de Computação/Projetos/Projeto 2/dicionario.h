@@ -18,6 +18,7 @@ void carrega_dicionario(char caminho[]);
 char procura_palavra(unsigned char palavra[], int comprimento);
 
 // Função que libera espaço armazenado pelo dicionário da memória e torna nulo o ponteiro para o extinto malloc.
+
 void libera_dicionario();
 
 #endif

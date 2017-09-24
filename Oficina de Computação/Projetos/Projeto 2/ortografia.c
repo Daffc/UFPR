@@ -20,7 +20,7 @@ int main()
    caractere = getchar();
 
 
-   // Laço de repetição le entrada caractere por caractere até que seja identificado o fim de arquivo.
+   // Laço de repetição lê entrada, caractere por caractere, até que seja identificado o fim de arquivo.
 
    while (caractere != EOF)
    {

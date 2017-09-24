@@ -181,16 +181,21 @@ void carrega_dicionario(char caminho[])
       exit(1);
    }
 
+   // Dunção que ira pegar comprimento da maior palavra do dicionário e o numero de palavras contidas
+   // no dicionário e salvalas nas variáveis max_comprimento e linhas respectivamente.
    dimencao_dicionario(arquivo, &linhas, &max_comprimento);
 
+   // Reserva-se espaço na memória de acordo com as dimenções estabelecidas anteriormente.
    ponto_dicionario = malloc(linhas * max_comprimento);
 
+   // Função para carregar palavras do dicionário em malloc indicado acima.
    aloca_strings(ponto_dicionario, arquivo);
 
+   // Fecha-se a Stream com o arquivo dicionário.
    fclose(arquivo);
    arquivo = NULL;
 
-   // Ordena vetor de strings dicionário  
+   // Ordena vetor de strings dicionário.  
    qsort(ponto_dicionario, linhas, max_comprimento, compara);
 }
 
@@ -202,8 +207,8 @@ char procura_palavra(unsigned char  palavra[], int comprimento)
    int            i;
 
 
-   // Transfere caractere por caractere a string recebida por parâmetro para o vetor auxiliar enquando converste, 
-   // se necessário caracteres para minúsculos.
+   // Transfere caractere por caractere a string recebida por parâmetro para o vetor auxiliar enquando converte, 
+   // se necessário, caracteres para minúsculos.
    for (i = 0; i < comprimento; ++i)
    {
       verificador[i] = verifica_converte(palavra[i]);
@@ -213,8 +218,8 @@ char procura_palavra(unsigned char  palavra[], int comprimento)
    verificador[i] = '\0';
 
    // Execulta busca binário por palavra contida no vetor verificador em vetor de strings dicionário. 
-   // Caso seja achada a palavra, resposta armazenará o endereço para ela no vetor de Palavras, caso contrário
-   // resposta será um vetor nulo. 
+   // Caso seja achada a palavra, resposta armazenará o endereço para ela no vetor de Palavras, caso 
+   // contrário resposta será um vetor nulo. 
    resposta = (unsigned char*) bsearch (verificador, ponto_dicionario, linhas, max_comprimento, compara);
    if( resposta != NULL ) 
    {
